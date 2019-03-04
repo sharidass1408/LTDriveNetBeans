@@ -11,7 +11,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="javafxltdrive.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxltdrive.FXMLDocumentController">
     <children>
       <TabPane prefHeight="933.0" prefWidth="1060.0" style="-fx-background-color: rgb(0,0,0.75);" tabClosingPolicy="UNAVAILABLE" tabMinHeight="50.0" tabMinWidth="70.0">
         <tabs>
@@ -213,7 +213,7 @@
                               </AnchorPane>
                            </children>
                         </HBox>
-                        <Button layoutX="346.0" layoutY="27.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="274.0" text="Browse a Catalog" />
+                        <Button fx:id="browseCatalog" layoutX="346.0" layoutY="27.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="39.0" prefWidth="274.0" text="Browse a Catalog" />
                         <Text fill="WHITE" layoutX="429.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OR">
                            <font>
                               <Font size="29.0" />
@@ -368,7 +368,10 @@
           </Tab>
             <Tab text="Bogey">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="SrijaButton" onAction="#handleSrijaButtonClick" layoutX="370.0" layoutY="78.0" mnemonicParsing="false" text="Srija Button" />
+                     </children></AnchorPane>
               </content>
             </Tab>
             <Tab text="Trans">
