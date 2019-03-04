@@ -12,6 +12,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.Button;
+import javafx.stage.FileChooser;
+import java.io.File;
 
 /**
  *
@@ -19,12 +21,21 @@ import javafx.scene.control.Button;
  */
 public class FXMLDocumentController implements Initializable {
     
-    public Button browseCatalog;
+    @FXML
+    private Button browseCatalog;
     
     
     
-    public void handleButtonClick(){
-        System.out.println("Run some code");
+    public void handleBrowseCatalogClick(){
+        FileChooser fc = new FileChooser();
+        File selectedFile = fc.showOpenDialog(null);
+        
+        if(selectedFile != null){
+            System.out.println("Valid file");
+        }else{
+            System.out.println("File not valid");
+        }
+        
     }
      
     

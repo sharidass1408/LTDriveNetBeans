@@ -213,7 +213,7 @@
                               </AnchorPane>
                            </children>
                         </HBox>
-                        <Button fx:id="browseCatalog" layoutX="346.0" layoutY="27.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="39.0" prefWidth="274.0" text="Browse a Catalog" />
+                        <Button fx:id="browseCatalog" layoutX="346.0" layoutY="27.0" mnemonicParsing="false" onAction="#handleBrowseCatalogClick" prefWidth="274.0" text="Browse a Catalog" />
                         <Text fill="WHITE" layoutX="429.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OR">
                            <font>
                               <Font size="29.0" />
